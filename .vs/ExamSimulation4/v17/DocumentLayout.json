@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Classtime\\source\\repos\\ExamSimulation4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|c:\\users\\classtime\\source\\repos\\examsimulation4\\pl\\areas\\admin\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|solutionrelative:pl\\areas\\admin\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|c:\\users\\classtime\\source\\repos\\examsimulation4\\pl\\areas\\admin\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|solutionrelative:pl\\areas\\admin\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|c:\\users\\classtime\\source\\repos\\examsimulation4\\pl\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|solutionrelative:pl\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\Classtime\\source\\repos\\ExamSimulation4\\PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\Classtime\\source\\repos\\ExamSimulation4\\PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T12:14:28.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Classtime\\source\\repos\\ExamSimulation4\\PL\\Areas\\Admin\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "PL\\Areas\\Admin\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\Classtime\\source\\repos\\ExamSimulation4\\PL\\Areas\\Admin\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "PL\\Areas\\Admin\\Controllers\\DepartmentController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwCsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T12:14:28.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Classtime\\source\\repos\\ExamSimulation4\\PL\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "PL\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Classtime\\source\\repos\\ExamSimulation4\\PL\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "PL\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T12:14:27.545Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

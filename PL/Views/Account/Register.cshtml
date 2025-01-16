@@ -1,0 +1,33 @@
+﻿@model RegisterDTO;
+
+<div class="container position-relative wow fadeInUp" data-wow-delay="0.1s">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="bg-light text-center p-5">
+                <h1 class="mb-4">Register</h1>
+                <form method="post">
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <input asp-for="Username" type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input asp-for="Email" type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                        </div>
+                        <div class="col-12">
+                            <input asp-for="Password" type="password" class="form-control border-0" placeholder="Your Password" style="height: 55px;">
+                        </div>
+                        <div class="col-12">
+                            <input asp-for="RepeatPassword" type="password" class="form-control border-0" placeholder="Your Password" style="height: 55px;">
+                        </div>
+                        <div class="col-12">
+                            <span>Already registered? <a asp-controller="Account" asp-action="Login">Login</a> now!</span>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
