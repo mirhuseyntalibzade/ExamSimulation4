@@ -13,8 +13,8 @@ namespace BL.Services.Abstractions
         public Task AddDoctorAsync(AddDoctorDTO doctorDTO);
         public Task UpdateDoctorAsync(UpdateDoctorDTO doctorDTO);
         public Task DeleteDoctorAsync(int Id);
-        public Task<Doctor> GetDoctorByIdAsync(int Id);
-        public Task<ICollection<Doctor>> GetAllDoctors();
+        public Task<GetDoctorDTO> GetDoctorByIdAsync(int Id);
+        public Task<ICollection<GetDoctorDTO>> GetAllDoctors();
 
     }
 }

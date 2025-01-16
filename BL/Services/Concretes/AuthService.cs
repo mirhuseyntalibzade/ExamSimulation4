@@ -22,12 +22,12 @@ namespace BL.Services.Concretes
         }
         public async Task LoginAsync(LoginDTO userDTO)
         {
-            IdentityUser user = await _userManager.FindByEmailAsync(userDTO.Email);
+            IdentityUser? user = await _userManager.FindByEmailAsync(userDTO.Email);
             if (user is null)
             {
                 throw new CredentialException("Credentials are not correct.");
             }
-            bool isSucceed= await _userManager.CheckPasswordAsync(user, userDTO.Password);
+            bool isSucceed = await _userManager.CheckPasswordAsync(user, userDTO.Password);
             if (!isSucceed)
             {
                 throw new CredentialException("Credentials are not correct.");
@@ -53,7 +53,6 @@ namespace BL.Services.Concretes
             {
                 throw new OperationNotValidException("Couldn't create user.");
             }
-
         }
         public async Task LogoutAsync()
         {

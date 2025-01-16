@@ -3,11 +3,14 @@ using BL.DTOs.DoctorDTOs;
 using BL.Exceptions;
 using BL.Services.Abstractions;
 using CORE.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace PL.Areas.Admin.Controllers
 {
+    [Area("Admin")]
+    [Authorize("Admin")]
     public class DoctorController : Controller
     {
         readonly IDoctorService _doctorService;
@@ -23,8 +26,8 @@ namespace PL.Areas.Admin.Controllers
         {
             try
             {
-                await _doctorService.GetAllDoctors();
-                return View();
+                ICollection<GetDoctorDTO> doctors = await _doctorService.GetAllDoctors();
+                return View(doctors);
             }
             catch (Exception ex)
             {
@@ -55,9 +58,30 @@ namespace PL.Areas.Admin.Controllers
             try
             {
                 await _doctorService.AddDoctorAsync(doctorDTO);
-                return View("Index");
+                return RedirectToAction("Index");
             }
             catch (OperationNotValidException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+        public async Task<IActionResult> Update(int Id)
+        {
+            try
+            {
+                GetDoctorDTO doctorDTO = await _doctorService.GetDoctorByIdAsync(Id);
+                UpdateDoctorDTO updateDoctorDTO = _mapper.Map<UpdateDoctorDTO>(doctorDTO);
+                ICollection<SelectListItem> departments = await _departmentService.SelectDepartmentsAsync();
+                updateDoctorDTO.Departments = departments;
+                return View(updateDoctorDTO);
+            }
+            catch (ItemNotFoundException ex)
             {
                 return BadRequest(ex.Message);
             }
@@ -73,7 +97,7 @@ namespace PL.Areas.Admin.Controllers
             try
             {
                 await _doctorService.UpdateDoctorAsync(updateDoctorDTO);
-                return View("Index");
+                return RedirectToAction("Index");
             }
             catch (OperationNotValidException ex)
             {
@@ -84,31 +108,12 @@ namespace PL.Areas.Admin.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
-        public async Task<IActionResult> Update(int Id)
-        {
-            try
-            {
-                Doctor doctor = await _doctorService.GetDoctorByIdAsync(Id);
-                UpdateDoctorDTO updateDoctorDTO = _mapper.Map<UpdateDoctorDTO>(doctor);
-                return View(doctor);
-            }
-            catch (ItemNotFoundException ex)
-            {
-                return BadRequest(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
         public async Task<IActionResult> Delete(int Id)
         {
             try
             {
                 await _doctorService.DeleteDoctorAsync(Id);
-                return RedirectToAction("Home", "Index");
+                return RedirectToAction("Index");
             }
             catch (ItemNotFoundException ex)
             {

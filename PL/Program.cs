@@ -6,6 +6,7 @@ using DAL.Repository.Absractions;
 using DAL.Repository.Concretes;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using PL;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,8 +22,9 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 
 builder.Services.AddScoped<IDoctorRepository, DoctorRepository>();
 builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
-builder.Services.AddScoped<DoctorService, DoctorService>();
+builder.Services.AddScoped<IDoctorService, DoctorService>();
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddAutoMapper(typeof(DoctorProfile));
 builder.Services.AddAutoMapper(typeof(DepartmentProfile));
@@ -45,6 +47,17 @@ builder.Services.AddAuthentication().AddCookie();
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    try
+    {
+        await DatabaseSeeder.SeedData(scope.ServiceProvider);
+    }catch(Exception ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+}
+
 app.UseStaticFiles();
 app.UseAuthentication();
 app.UseAuthorization();
@@ -58,6 +71,5 @@ app.MapControllerRoute(
     name:"default",
     pattern:"{controller=Home}/{action=Index}/{id?}"
 );
-
 
 app.Run();

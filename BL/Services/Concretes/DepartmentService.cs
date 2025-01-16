@@ -5,6 +5,7 @@ using BL.Services.Abstractions;
 using CORE.Models;
 using DAL.Repository.Absractions;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
 
 namespace BL.Services.Concretes
 {
@@ -43,20 +44,22 @@ namespace BL.Services.Concretes
             }
         }
 
-        public async Task<ICollection<Department>> GetAllDepartments()
+        public async Task<ICollection<GetDepartmentDTO>> GetAllDepartments()
         {
             ICollection<Department> departments = await _departmentRepository.GetAllAsync();
-            return departments;
+            ICollection<GetDepartmentDTO> departmentDTOs = _mapper.Map<ICollection<GetDepartmentDTO>>(departments);
+            return departmentDTOs;
         }
 
-        public async Task<Department> GetDepartmentByIdAsync(int Id)
+        public async Task<GetDepartmentDTO> GetDepartmentByIdAsync(int Id)
         {
             Department department = await _departmentRepository.GetByIdAsync(Id);
             if (department is null)
             {
                 throw new ItemNotFoundException("Couldnt find item.");
             }
-            return department;
+            GetDepartmentDTO departmentDTO = _mapper.Map<GetDepartmentDTO>(department);
+            return departmentDTO;
         }
 
         public async Task<ICollection<SelectListItem>> SelectDepartmentsAsync()
@@ -71,7 +74,8 @@ namespace BL.Services.Concretes
             {
                 throw new ItemNotFoundException("Couldnt find item.");
             }
-            _departmentRepository.Update(department);
+            Department updatedDepartment = _mapper.Map<Department>(departmentDTO);
+            _departmentRepository.Update(updatedDepartment);
             int result = await _departmentRepository.SaveChangesAsync();
             if (result == 0)
             {

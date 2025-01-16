@@ -3,10 +3,13 @@ using BL.DTOs.DepartmentDTOs;
 using BL.Exceptions;
 using BL.Services.Abstractions;
 using CORE.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace PL.Areas.Admin.Controllers
 {
+    [Area("Admin")]
+    [Authorize("Admin")]
     public class DepartmentController : Controller
     {
         readonly IDepartmentService _departmentService;
@@ -20,8 +23,8 @@ namespace PL.Areas.Admin.Controllers
         {
             try
             {
-                await _departmentService.GetAllDepartments();
-                return View();
+                ICollection<GetDepartmentDTO> departments = await _departmentService.GetAllDepartments();
+                return View(departments);
             }
             catch (Exception ex)
             {
@@ -29,7 +32,7 @@ namespace PL.Areas.Admin.Controllers
             }
         }
 
-        public async Task<IActionResult> Create()
+        public IActionResult Create()
         {
             try
             {
@@ -47,9 +50,28 @@ namespace PL.Areas.Admin.Controllers
             try
             {
                 await _departmentService.AddDepartmentAsync(departmentDTO);
-                return View("Index");
+                return RedirectToAction("Index");
             }
             catch (OperationNotValidException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+        public async Task<IActionResult> Update(int Id)
+        {
+            try
+            {
+                GetDepartmentDTO department = await _departmentService.GetDepartmentByIdAsync(Id);
+                UpdateDepartmentDTO updateDepartmentDTO = _mapper.Map<UpdateDepartmentDTO>(department);
+                return View(updateDepartmentDTO);
+            }
+            catch (ItemNotFoundException ex)
             {
                 return BadRequest(ex.Message);
             }
@@ -65,7 +87,7 @@ namespace PL.Areas.Admin.Controllers
             try
             {
                 await _departmentService.UpdateDepartmentAsync(updateDepartmentDTO);
-                return View("Index");
+                return RedirectToAction("Index");
             }
             catch (OperationNotValidException ex)
             {
@@ -76,31 +98,12 @@ namespace PL.Areas.Admin.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
-        public async Task<IActionResult> Update(int Id)
-        {
-            try
-            {
-                Department department = await _departmentService.GetDepartmentByIdAsync(Id);
-                UpdateDepartmentDTO updateDepartmentDTO = _mapper.Map<UpdateDepartmentDTO>(department);
-                return View(department);
-            }
-            catch (ItemNotFoundException ex)
-            {
-                return BadRequest(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-        }
-
         public async Task<IActionResult> Delete(int Id)
         {
             try
             {
                 await _departmentService.DeleteDepartmentAsync(Id);
-                return RedirectToAction("Home","Index");
+                return RedirectToAction("Index");
             }
             catch (ItemNotFoundException ex)
             {

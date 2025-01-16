@@ -4,6 +4,7 @@ using BL.Exceptions;
 using BL.Services.Abstractions;
 using CORE.Models;
 using DAL.Repository.Absractions;
+using DAL.Repository.Concretes;
 using Microsoft.AspNetCore.Hosting;
 using System;
 using System.Collections.Generic;
@@ -26,8 +27,6 @@ namespace BL.Services.Concretes
         }
         public async Task AddDoctorAsync(AddDoctorDTO doctorDTO)
         {
-            Doctor doctor = _mapper.Map<Doctor>(doctorDTO);
-
             string rootPath = _webHostEnvironment.WebRootPath;
             string folder = rootPath + "/uploads/doctors/";
             if (!Directory.Exists(folder))
@@ -54,13 +53,16 @@ namespace BL.Services.Concretes
 
             string filePath = folder + fileName;
 
-            using (FileStream stream = new FileStream(folder,FileMode.Create))
+            using (FileStream stream = new FileStream(filePath, FileMode.Create))
             {
                 await doctorDTO.Image.CopyToAsync(stream);
             }
-            doctor.ImageURL = filePath;
+
+            Doctor doctor = _mapper.Map<Doctor>(doctorDTO);
+            doctor.ImageURL = fileName;
 
             await _doctorRepository.AddAsync(doctor);
+
             int result = await _doctorRepository.SaveChangesAsync();
             if (result == 0)
             {
@@ -83,25 +85,33 @@ namespace BL.Services.Concretes
             }
         }
 
-        public async Task<ICollection<Doctor>> GetAllDoctors()
+        public async Task<ICollection<GetDoctorDTO>> GetAllDoctors()
         {
             ICollection<Doctor> doctors = await _doctorRepository.GetAllAsync();
-            return doctors;
+            ICollection<GetDoctorDTO> doctorsDTO = _mapper.Map<ICollection<GetDoctorDTO>>(doctors);
+            return doctorsDTO;
         }
 
-        public async Task<Doctor> GetDoctorByIdAsync(int Id)
+        public async Task<GetDoctorDTO> GetDoctorByIdAsync(int Id)
         {
             Doctor doctor = await _doctorRepository.GetByIdAsync(Id);
             if (doctor is null)
             {
                 throw new ItemNotFoundException("Couldnt find doctor.");
             }
-            return doctor;
+            GetDoctorDTO doctorDTO = _mapper.Map<GetDoctorDTO>(doctor);
+
+            return doctorDTO;
         }
 
         public async Task UpdateDoctorAsync(UpdateDoctorDTO doctorDTO)
         {
             Doctor doctor = await _doctorRepository.GetByConditionAsync(d => d.Id==doctorDTO.Id);
+            if (doctor is null)
+            {
+                throw new ItemNotFoundException("Couldnt find doctor.");
+            }
+
             string rootPath = _webHostEnvironment.WebRootPath;
             string folder = rootPath + "/uploads/doctors/";
             string fileName = doctorDTO.Image.FileName;
@@ -124,16 +134,14 @@ namespace BL.Services.Concretes
 
             string filePath = folder + fileName;
 
-            using (FileStream stream = new FileStream(folder, FileMode.Create))
+            using (FileStream stream = new FileStream(filePath, FileMode.Create))
             {
                 await doctorDTO.Image.CopyToAsync(stream);
             }
-            doctor.ImageURL = filePath;
-            if (doctor is null)
-            {
-                throw new ItemNotFoundException("Couldnt find doctor.");
-            }
-            _doctorRepository.Update(doctor);
+            Doctor updatedDoctor = _mapper.Map<Doctor>(doctorDTO);
+            updatedDoctor.ImageURL = fileName;
+
+            _doctorRepository.Update(updatedDoctor);
             int result = await _doctorRepository.SaveChangesAsync();
             if (result == 0)
             {

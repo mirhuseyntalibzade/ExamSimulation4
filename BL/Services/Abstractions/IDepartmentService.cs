@@ -11,8 +11,8 @@ namespace BL.Services.Abstractions
 {
     public interface IDepartmentService
     {
-        public Task<ICollection<Department>> GetAllDepartments();
-        public Task<Department> GetDepartmentByIdAsync(int Id);
+        public Task<ICollection<GetDepartmentDTO>> GetAllDepartments();
+        public Task<GetDepartmentDTO> GetDepartmentByIdAsync(int Id);
         public Task AddDepartmentAsync(AddDepartmentDTO departmentDTO);
         public Task UpdateDepartmentAsync(UpdateDepartmentDTO departmentDTO);
         public Task DeleteDepartmentAsync(int Id);

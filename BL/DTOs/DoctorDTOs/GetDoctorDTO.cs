@@ -16,6 +16,6 @@ namespace BL.DTOs.DoctorDTOs
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int DepartmentId { get; set; }
-        public Department Department { get; set; }
+        public Department? Department { get; set; }
     }
 }

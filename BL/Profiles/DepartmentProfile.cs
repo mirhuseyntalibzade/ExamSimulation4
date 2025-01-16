@@ -14,6 +14,9 @@ namespace BL.Profiles
         public DepartmentProfile()
         {
             CreateMap<Department, GetDepartmentDTO>().ReverseMap();
+            CreateMap<Department, UpdateDepartmentDTO>().ReverseMap();
+            CreateMap<Department, AddDepartmentDTO>().ReverseMap();
+            CreateMap<GetDepartmentDTO, UpdateDepartmentDTO>().ReverseMap();
         }
     }
 }
