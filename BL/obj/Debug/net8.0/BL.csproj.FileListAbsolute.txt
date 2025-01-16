@@ -15,3 +15,4 @@ C:\Users\Classtime\source\repos\ExamSimulation4\BL\bin\Debug\net8.0\CORE.pdb
 C:\Users\Classtime\source\repos\ExamSimulation4\BL\bin\Debug\net8.0\DAL.pdb
 C:\Users\Classtime\source\repos\ExamSimulation4\BL\obj\Debug\net8.0\BL.csproj.AssemblyReference.cache
 C:\Users\Classtime\source\repos\ExamSimulation4\BL\obj\Debug\net8.0\BL.csproj.Up2Date
+C:\Users\Classtime\source\repos\ExamSimulation4\BL\obj\Debug\net8.0\BL.sourcelink.json

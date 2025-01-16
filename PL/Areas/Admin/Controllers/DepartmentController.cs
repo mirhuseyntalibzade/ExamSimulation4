@@ -40,6 +40,43 @@ namespace PL.Areas.Admin.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(AddDepartmentDTO departmentDTO)
+        {
+            try
+            {
+                await _departmentService.AddDepartmentAsync(departmentDTO);
+                return View("Index");
+            }
+            catch (OperationNotValidException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(UpdateDepartmentDTO updateDepartmentDTO)
+        {
+            try
+            {
+                await _departmentService.UpdateDepartmentAsync(updateDepartmentDTO);
+                return View("Index");
+            }
+            catch (OperationNotValidException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         public async Task<IActionResult> Update(int Id)
         {
             try

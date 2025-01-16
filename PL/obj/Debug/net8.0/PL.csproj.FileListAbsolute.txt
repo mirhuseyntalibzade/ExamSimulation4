@@ -270,3 +270,4 @@ C:\Users\Classtime\source\repos\ExamSimulation4\PL\obj\Debug\net8.0\PL.MvcApplic
 C:\Users\Classtime\source\repos\ExamSimulation4\PL\obj\Debug\net8.0\PL.RazorAssemblyInfo.cache
 C:\Users\Classtime\source\repos\ExamSimulation4\PL\obj\Debug\net8.0\PL.RazorAssemblyInfo.cs
 C:\Users\Classtime\source\repos\ExamSimulation4\PL\bin\Debug\net8.0\PL.staticwebassets.runtime.json
+C:\Users\Classtime\source\repos\ExamSimulation4\PL\obj\Debug\net8.0\PL.sourcelink.json
