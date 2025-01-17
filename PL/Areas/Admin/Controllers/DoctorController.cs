@@ -3,9 +3,11 @@ using BL.DTOs.DoctorDTOs;
 using BL.Exceptions;
 using BL.Services.Abstractions;
 using CORE.Models;
+using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 
 namespace PL.Areas.Admin.Controllers
 {

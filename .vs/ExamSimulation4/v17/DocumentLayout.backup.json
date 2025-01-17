@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8BBAA7D-E89C-485F-A5F7-B7B90DE32DD7}|BL\\BL.csproj|c:\\users\\my computer\\desktop\\examsimulation4\\bl\\services\\concretes\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8BBAA7D-E89C-485F-A5F7-B7B90DE32DD7}|BL\\BL.csproj|solutionrelative:bl\\services\\concretes\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|c:\\users\\my computer\\desktop\\examsimulation4\\pl\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|solutionrelative:pl\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|c:\\users\\my computer\\desktop\\examsimulation4\\pl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|solutionrelative:pl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|c:\\users\\my computer\\desktop\\examsimulation4\\pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|solutionrelative:pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|c:\\users\\my computer\\desktop\\examsimulation4\\pl\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|solutionrelative:pl\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|c:\\users\\my computer\\desktop\\examsimulation4\\pl\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|solutionrelative:pl\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|c:\\users\\my computer\\desktop\\examsimulation4\\pl\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|solutionrelative:pl\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|c:\\users\\my computer\\desktop\\examsimulation4\\pl\\areas\\admin\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|solutionrelative:pl\\areas\\admin\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8BBAA7D-E89C-485F-A5F7-B7B90DE32DD7}|BL\\BL.csproj|c:\\users\\my computer\\desktop\\examsimulation4\\bl\\services\\concretes\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8BBAA7D-E89C-485F-A5F7-B7B90DE32DD7}|BL\\BL.csproj|solutionrelative:bl\\services\\concretes\\doctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|c:\\users\\my computer\\desktop\\examsimulation4\\pl\\areas\\admin\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{A8BBAA7D-E89C-485F-A5F7-B7B90DE32DD7}|BL\\BL.csproj|solutionrelative:bl\\dtos\\doctordtos\\getdoctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|c:\\users\\my computer\\desktop\\examsimulation4\\pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CC3AE2E-82E7-4623-8343-6108607A43A6}|PL\\PL.csproj|solutionrelative:pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D88F5350-ADDC-4815-9090-FB5FBE2CD26A}|DAL\\DAL.csproj|c:\\users\\my computer\\desktop\\examsimulation4\\dal\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D88F5350-ADDC-4815-9090-FB5FBE2CD26A}|DAL\\DAL.csproj|solutionrelative:dal\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -46,24 +66,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DoctorProfile.cs",
-              "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\BL\\Profiles\\DoctorProfile.cs",
-              "RelativeDocumentMoniker": "BL\\Profiles\\DoctorProfile.cs",
-              "ToolTip": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\BL\\Profiles\\DoctorProfile.cs",
-              "RelativeToolTip": "BL\\Profiles\\DoctorProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T19:54:39.503Z",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PL\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PL\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAmwDEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T07:27:55.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "PL\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "PL\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T07:22:02.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "PL\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "PL\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAACwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T07:18:32.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PL\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "PL\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAWwGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T07:16:33.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "PL\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "PL\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwEEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T07:10:33.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "GetDepartmentDTO.cs",
               "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\BL\\DTOs\\DepartmentDTOs\\GetDepartmentDTO.cs",
               "RelativeDocumentMoniker": "BL\\DTOs\\DepartmentDTOs\\GetDepartmentDTO.cs",
@@ -71,12 +143,11 @@
               "RelativeToolTip": "BL\\DTOs\\DepartmentDTOs\\GetDepartmentDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T19:52:30.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T19:52:30.717Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "GetDoctorDTO.cs",
               "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\BL\\DTOs\\DoctorDTOs\\GetDoctorDTO.cs",
               "RelativeDocumentMoniker": "BL\\DTOs\\DoctorDTOs\\GetDoctorDTO.cs",
@@ -84,12 +155,11 @@
               "RelativeToolTip": "BL\\DTOs\\DoctorDTOs\\GetDoctorDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T19:46:06.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T19:46:06.46Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Areas\\Admin\\Views\\Doctor\\Index.cshtml",
               "RelativeDocumentMoniker": "PL\\Areas\\Admin\\Views\\Doctor\\Index.cshtml",
@@ -97,25 +167,37 @@
               "RelativeToolTip": "PL\\Areas\\Admin\\Views\\Doctor\\Index.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-16T19:43:23.956Z",
+              "WhenOpened": "2025-01-16T19:43:23.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Program.cs",
+              "RelativeDocumentMoniker": "PL\\Program.cs",
+              "ToolTip": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Program.cs",
+              "RelativeToolTip": "PL\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T19:37:24.927Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "DoctorController.cs",
               "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
               "RelativeDocumentMoniker": "PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
               "ToolTip": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
               "RelativeToolTip": "PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAowFAAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAASwCoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T19:37:29.125Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Areas\\Admin\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "PL\\Areas\\Admin\\Controllers\\DepartmentController.cs",
@@ -123,25 +205,36 @@
               "RelativeToolTip": "PL\\Areas\\Admin\\Controllers\\DepartmentController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T19:39:39.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T19:39:39.771Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
+              "Title": "DoctorProfile.cs",
+              "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\BL\\Profiles\\DoctorProfile.cs",
+              "RelativeDocumentMoniker": "BL\\Profiles\\DoctorProfile.cs",
+              "ToolTip": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\BL\\Profiles\\DoctorProfile.cs",
+              "RelativeToolTip": "BL\\Profiles\\DoctorProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T19:54:39.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "DoctorService.cs",
               "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\BL\\Services\\Concretes\\DoctorService.cs",
               "RelativeDocumentMoniker": "BL\\Services\\Concretes\\DoctorService.cs",
               "ToolTip": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\BL\\Services\\Concretes\\DoctorService.cs",
               "RelativeToolTip": "BL\\Services\\Concretes\\DoctorService.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAmwI8AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAiwHkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T19:38:16.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\DAL\\Contexts\\AppDbContext.cs",
               "RelativeDocumentMoniker": "DAL\\Contexts\\AppDbContext.cs",
@@ -149,21 +242,7 @@
               "RelativeToolTip": "DAL\\Contexts\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T19:38:14.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Program.cs",
-              "RelativeDocumentMoniker": "PL\\Program.cs",
-              "ToolTip": "C:\\Users\\My Computer\\Desktop\\ExamSimulation4\\PL\\Program.cs",
-              "RelativeToolTip": "PL\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T19:37:24.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T19:38:14.622Z"
             }
           ]
         }

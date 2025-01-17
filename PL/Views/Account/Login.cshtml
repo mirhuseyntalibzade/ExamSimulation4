@@ -42,12 +42,17 @@
                     <div class="row g-3">
                         <div class="col-12 col-sm-6">
                             <input asp-for="Username" type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                            <span asp-validation-for="Username"></span>
                         </div>
                         <div class="col-12 col-sm-6">
                             <input asp-for="Email" type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                            <span asp-validation-for="Email"></span>
+
                         </div>
                         <div class="col-12">
                             <input asp-for="Password" type="password" class="form-control border-0" placeholder="Your Password" style="height: 55px;">
+                            <span asp-validation-for="Password"></span>
+
                         </div>
                         <div class="col-12">
                             <span>Dont you have an account? <a asp-controller="Account" asp-action="Register">Register</a> now!</span>

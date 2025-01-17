@@ -1,6 +1,7 @@
 ﻿using BL.DTOs.AuthDTOs;
 using BL.Exceptions;
 using BL.Services.Abstractions;
+using BL.Validations.AuthValidations;
 using Microsoft.AspNetCore.Mvc;
 
 namespace PL.Controllers
@@ -21,6 +22,17 @@ namespace PL.Controllers
         {
             try
             {
+                var validator = new LoginValidation();
+                var results = validator.Validate(loginDTO);
+                if (!results.IsValid)
+                {
+                    foreach (var failure in results.Errors)
+                    {
+                        ModelState.AddModelError(failure.ErrorCode, failure.ErrorMessage);
+                    }
+                    return View();
+                }
+
                 await _authService.LoginAsync(loginDTO);
                 return RedirectToAction("Index","Home");
             }
@@ -33,12 +45,28 @@ namespace PL.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        public async Task<IActionResult> Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
         public async Task<IActionResult> Register(RegisterDTO registerDTO)
         {
             try
             {
+                var validator = new RegisterValidation();
+                var results = validator.Validate(registerDTO);
+                if (!results.IsValid)
+                {
+                    foreach (var failure in results.Errors)
+                    {
+                        ModelState.AddModelError(failure.ErrorCode, failure.ErrorMessage);
+                    }
+                    return View();
+                }
                 await _authService.RegisterAsync(registerDTO);
-                return View("Login");
+                return RedirectToAction("Login","Account");
             }
             catch (OperationNotValidException ex)
             {
